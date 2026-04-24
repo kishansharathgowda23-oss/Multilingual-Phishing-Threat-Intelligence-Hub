@@ -620,8 +620,8 @@ const App = () => {
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
 
           <div className="flex flex-col items-center text-center">
-            <div className="w-20 h-20 bg-indigo-600/10 rounded-3xl flex items-center justify-center mb-8 border border-indigo-500/20 shadow-[0_0_30px_rgba(79,70,229,0.15)]">
-              <Shield className="text-indigo-400 w-10 h-10" />
+            <div className="w-24 h-24 mb-8 overflow-hidden rounded-2xl shadow-[0_0_30px_rgba(79,70,229,0.3)] border border-slate-800">
+              <img src="/logo.jpg" alt="ShieldX Logo" className="w-full h-full object-cover scale-110" />
             </div>
 
             <h1 className="text-2xl font-bold text-white mb-4">ShieldX Installation</h1>
