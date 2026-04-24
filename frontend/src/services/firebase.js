@@ -1,29 +1,34 @@
-import { initializeApp } from 'firebase/app'
-import { getFirestore } from 'firebase/firestore'
-import { getStorage } from 'firebase/storage'
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider, RecaptchaVerifier, signInWithPopup, PhoneAuthProvider, linkWithCredential } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
-const requiredKeys = [
-  'VITE_FIREBASE_API_KEY',
-  'VITE_FIREBASE_AUTH_DOMAIN',
-  'VITE_FIREBASE_PROJECT_ID',
-  'VITE_FIREBASE_STORAGE_BUCKET',
-  'VITE_FIREBASE_MESSAGING_SENDER_ID',
-  'VITE_FIREBASE_APP_ID'
-]
-
-const hasFirebaseConfig = requiredKeys.every((key) => Boolean(import.meta.env[key]))
-
+// 🔥 PASTE YOUR FIREBASE CONFIG HERE
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
-}
+  apiKey: "AIzaSyCQx0yJ3CzABQe-b4mio8DfBMaMV_01jE0",
+  authDomain: "shieldx-d9881.firebaseapp.com",
+  projectId: "shieldx-d9881",
+  storageBucket: "shieldx-d9881.firebasestorage.app",
+  messagingSenderId: "151467793516",
+  appId: "1:151467793516:web:059d980453680284f5cc49",
+  measurementId: "G-M3E04303J5"
+};
 
-const app = hasFirebaseConfig ? initializeApp(firebaseConfig) : null
-export const db = app ? getFirestore(app) : null
-export const storage = app ? getStorage(app) : null
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-export default app
+// Services
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);
+
+// Export auth helpers
+export {
+  GoogleAuthProvider,
+  RecaptchaVerifier,
+  signInWithPopup,
+  PhoneAuthProvider,
+  linkWithCredential
+};
+
+export default app;
