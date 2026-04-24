@@ -58,6 +58,42 @@ const ResultCard = ({ result, onSuspiciousAction, onSafeLinkClick }) => {
         </div>
       ) : null}
 
+      {/* ML Model Analysis Results */}
+      {result.mlAnalysis ? (
+        <div className="mb-6 bg-gradient-to-r from-purple-900/30 to-indigo-900/30 border border-purple-700/50 rounded-lg p-4">
+          <p className="text-gray-300 text-sm font-bold mb-3 flex items-center">
+            <span className="mr-2">🤖</span>
+            ML Model Analysis
+          </p>
+          <div className="grid grid-cols-2 gap-3 text-xs">
+            {result.mlAnalysis.phishing && (
+              <div className="bg-gray-800/50 rounded p-2">
+                <span className="text-gray-400">Phishing</span>
+                <p className="text-red-300 font-bold">{Math.round(result.mlAnalysis.phishing.confidence * 100)}%</p>
+              </div>
+            )}
+            {result.mlAnalysis.spam && (
+              <div className="bg-gray-800/50 rounded p-2">
+                <span className="text-gray-400">Spam</span>
+                <p className="text-yellow-300 font-bold">{Math.round(result.mlAnalysis.spam.confidence * 100)}%</p>
+              </div>
+            )}
+            {result.mlAnalysis.classification && (
+              <div className="bg-gray-800/50 rounded p-2">
+                <span className="text-gray-400">Classification</span>
+                <p className="text-blue-300 font-bold capitalize">{result.mlAnalysis.classification.classification}</p>
+              </div>
+            )}
+            {result.mlAnalysis.models && (
+              <div className="bg-gray-800/50 rounded p-2 col-span-2">
+                <span className="text-gray-400">Models Used</span>
+                <p className="text-gray-300 text-xs mt-1">{result.mlAnalysis.models.join(', ')}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      ) : null}
+
       {result.details ? (
         <div className="mb-6">
           <p className="text-gray-400 text-sm mb-2">Details</p>

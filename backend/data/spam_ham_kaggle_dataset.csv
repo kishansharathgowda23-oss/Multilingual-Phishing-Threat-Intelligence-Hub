@@ -1,0 +1,61 @@
+message_id,label,label_num,message_text,char_count,word_count,has_url,has_phone,language,source_type
+1,spam,1,WINNER!! You have been selected to receive a $1000 Walmart gift card. Call 1-800-555-0199 NOW!,94,15,1,1,English,SMS
+2,spam,1,Congratulations! Your phone number won our weekly lottery. Claim prize at www.fakeprize.com,91,12,1,0,English,SMS
+3,spam,1,FREE entry in 2 a weekly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121,86,20,0,0,English,SMS
+4,spam,1,URGENT: Your account has been compromised. Click http://bit.ly/secure123 to verify now.,87,11,1,0,English,Email
+5,spam,1,You have 1 unread message from a secret admirer! Go to www.flirtmatch.com to read it.,85,15,1,0,English,Email
+6,spam,1,Earn $500/day working from home! No experience needed. Limited spots. Reply YES to join.,88,14,0,0,English,SMS
+7,spam,1,Your SBI account is blocked. Update KYC at www.sbi-kyc-update.net or call 9988776655,84,12,1,1,English,SMS
+8,spam,1,Loan approved! Get Rs.50000 instantly. No documents needed. Call 8877665544,75,10,0,1,English,SMS
+9,spam,1,"Dear customer, your Paytm wallet is suspended. Verify now: http://paytm-verify.xyz",82,10,1,0,English,SMS
+10,spam,1,Hot singles in your area want to meet you! Visit www.meetme.live FREE for 24hrs,79,14,1,0,English,Email
+11,spam,1,"FINAL NOTICE: You owe $2,340. Avoid legal action. Call our billing dept: 1-888-000-1234",87,13,0,1,English,Email
+12,spam,1,Buy V1AGR@ online – cheapest prices! No prescription. Discreet shipping. Order now!,83,12,0,0,English,Email
+13,spam,1,"You are pre-approved for a $25,000 personal loan with 0% interest for 6 months!",79,14,0,0,English,Email
+14,spam,1,Claim your FREE iPhone 15! Take a 30-second survey at www.free-iphone-survey.com,80,11,1,0,English,Email
+15,spam,1,Act now! Limited time offer. Lose 20kg in 30 days with our miracle weight loss pill!,84,16,0,0,English,Email
+16,spam,1,Your delivery is on hold. Pay customs fee of Rs.199 at: http://delivery-customs.xyz,83,12,1,0,English,SMS
+17,spam,1,Reminder: You have unclaimed cashback of Rs.2500. Redeem via www.cashback-redeem.in,83,10,1,0,English,SMS
+18,spam,1,"MAKE MONEY FAST! Join our MLM team and earn $10,000/month. Text JOIN to 99900",77,14,0,0,English,SMS
+19,spam,1,"Your electricity bill is overdue. To avoid disconnection, pay now: http://bescom-pay.xyz",88,11,1,0,English,SMS
+20,spam,1,Congratulations! You've been selected for a free vacation package to Goa. Call 7788990011,89,13,0,1,English,SMS
+21,spam,1,AMAZON: Your package #AZ2048 is delayed. Reschedule at http://amazon-reschedule.net,83,9,1,0,English,SMS
+22,spam,1,Win big tonight! Bet with us and get 200% bonus on first deposit. www.bettingwin.com,84,14,1,0,English,Email
+23,spam,1,Your Google account was accessed from unknown device. Verify: http://google-login-verify.com,92,10,1,0,English,Email
+24,spam,1,"Dear user, your Netflix subscription has expired. Renew at http://netflix-renewal.xyz",85,10,1,0,English,Email
+25,spam,1,Aapka loan approved ho gaya hai. Abhi Rs.1 lakh paane ke liye call karein: 9876543210,85,15,0,1,Hinglish,SMS
+26,spam,1,FREE SIM CARD upgrade! Get 5G SIM with double data. Call your operator: 1800-XXX-9999,85,14,0,1,English,SMS
+27,spam,1,Your credit score is 800+. You qualify for instant credit card. Apply: www.instacredit.in,89,13,1,0,English,Email
+28,spam,1,Bro work from home opportunity 25k per month guaranteed no investment reply INTERESTED,86,13,0,0,English,WhatsApp
+29,spam,1,"Your OTP for transaction is 452310. NEVER share OTP. If not you, call 1800-111-2222 now.",88,15,0,1,English,SMS
+30,spam,1,SPECIAL DIWALI OFFER: Buy gold coins online at 40% discount! www.gold-diwali-sale.com,85,11,1,0,English,SMS
+31,ham,0,"Hey, are you coming to the office tomorrow? We have a team meeting at 10am.",75,15,0,0,English,SMS
+32,ham,0,Can you please pick up some milk and bread on your way home?,60,13,0,0,English,SMS
+33,ham,0,The project report is due by Friday. Let me know if you need any help with the slides.,86,18,0,0,English,Email
+34,ham,0,Happy birthday! Hope you have a wonderful day filled with joy and laughter.,75,13,0,0,English,SMS
+35,ham,0,I will be late by 15 minutes. Traffic is really bad on the highway today.,73,15,0,0,English,SMS
+36,ham,0,Can we reschedule our call to 3pm? I have a conflict with the earlier slot.,75,15,0,0,English,Email
+37,ham,0,Thanks for the recommendation! I tried that restaurant and the food was amazing.,80,13,0,0,English,SMS
+38,ham,0,Your appointment with Dr. Sharma is confirmed for March 22nd at 11:00 AM.,73,13,0,0,English,SMS
+39,ham,0,"Reminder: Your electricity bill of Rs.1,240 is due on 25th March. Pay via BESCOM app.",85,15,0,0,English,SMS
+40,ham,0,"Hey, did you watch the IPL match last night? What a finish!",59,12,0,0,English,WhatsApp
+41,ham,0,Please review the attached document and share your feedback before EOD.,71,11,0,0,English,Email
+42,ham,0,Mom said dinner is ready. Come home soon.,41,8,0,0,English,SMS
+43,ham,0,The wifi password is: HomeNetwork2024. Let me know if it doesn't work.,70,12,0,0,English,SMS
+44,ham,0,Your order #ORD78234 has been shipped. Expected delivery: 22nd March 2026.,74,11,0,0,English,Email
+45,ham,0,"Just got out of the movie. It was really good, you should watch it this weekend!",80,16,0,0,English,SMS
+46,ham,0,Meeting notes from today's standup have been shared on Confluence. Please review.,81,12,0,0,English,Email
+47,ham,0,Kal subah 8 baje gym milte hain. Aana pakka.,44,9,0,0,Hinglish,WhatsApp
+48,ham,0,Your salary for March 2026 has been credited to your account. Check your bank statement.,88,15,0,0,English,SMS
+49,ham,0,The library book you reserved is now available for pickup. Valid till March 25th.,81,14,0,0,English,Email
+50,ham,0,Can you send me the recipe for that pasta you made last week? It was delicious!,79,16,0,0,English,WhatsApp
+51,ham,0,Team lunch is on Friday at 1pm. We're going to the new place near the office.,77,16,0,0,English,SMS
+52,ham,0,I finished reading that book you suggested. Let's discuss it over coffee sometime.,82,13,0,0,English,SMS
+53,ham,0,Your internship offer letter from XYZ Corp is attached. Please sign and return by Friday.,89,15,0,0,English,Email
+54,ham,0,Power outage scheduled in your area on Sunday 6am-10am for maintenance. Plan accordingly.,89,13,0,0,English,SMS
+55,ham,0,Reminder: Renew vehicle insurance before April 5th to avoid lapse in coverage.,78,12,0,0,English,SMS
+56,ham,0,"Your PF balance for FY 2025-26 is Rs. 87,430. Check full statement on EPFO portal.",82,15,0,0,English,SMS
+57,ham,0,Do you want to join us for a walk in Cubbon Park on Sunday morning around 7?,76,17,0,0,English,WhatsApp
+58,ham,0,Coding assignment deadline extended to next Wednesday. Update posted on the LMS.,80,12,0,0,English,Email
+59,ham,0,Please submit the leave application through the HR portal. Your manager needs to approve it.,92,15,0,0,English,Email
+60,ham,0,Flight PQ456 from Bengaluru to Delhi on March 25 is on schedule. Boarding at Gate 14.,85,16,0,0,English,SMS

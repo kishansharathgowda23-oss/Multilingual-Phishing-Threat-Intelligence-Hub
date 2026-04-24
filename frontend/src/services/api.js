@@ -18,12 +18,19 @@ export const analyzeContent = async (content) => {
       emails: data.emails || [],
       keywords: data.keywords || [],
       suspiciousUrls: data.suspiciousLinks || [],
-      warnings: data.warning || ''
+      warnings: data.warning || '',
+      mlAnalysis: data.mlAnalysis || null,
+      timestamp: data.timestamp || new Date().toISOString()
     }
   } catch (error) {
     console.error('Analysis error:', error)
     throw error
   }
+}
+
+export const compareRealtimeContent = async (content) => {
+  const response = await axios.post(`${API_BASE_URL}/api/realtime-compare`, { message: content })
+  return response.data || {}
 }
 
 export const uploadAndAnalyzeFile = async (file) => {
@@ -42,7 +49,8 @@ export const uploadAndAnalyzeFile = async (file) => {
         confidence: data.confidence,
         details: data.warning,
         fileName: data.fileName,
-        fileSize: data.fileSize
+        fileSize: data.fileSize,
+        timestamp: response.data.timestamp || new Date().toISOString()
       }
     }
     return response.data.data
@@ -63,6 +71,7 @@ export const saveAnalysisToFirebase = async (analysisResult, userId = 'anonymous
       risk: analysisResult.risk,
       confidence: analysisResult.confidence,
       details: analysisResult.details,
+      mlAnalysis: analysisResult.mlAnalysis || null,
       timestamp: new Date(),
       createdAt: new Date().toISOString()
     })
@@ -74,7 +83,22 @@ export const saveAnalysisToFirebase = async (analysisResult, userId = 'anonymous
 }
 
 export const getAnalysisHistory = async (userId = 'anonymous', limitCount = 20) => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/api/history`, {
+      params: { limit: limitCount }
+    })
+    if (Array.isArray(response.data?.history)) {
+      return response.data.history.map((item) => ({
+        ...item,
+        mlAnalysis: item.mlAnalysis || item.mlPrediction || null
+      }))
+    }
+  } catch (error) {
+    console.warn('Backend history fetch failed, falling back to Firebase:', error.message)
+  }
+
   if (!db) return []
+
   try {
     const analysisRef = collection(db, 'analyses')
     const q = query(
@@ -86,11 +110,21 @@ export const getAnalysisHistory = async (userId = 'anonymous', limitCount = 20) 
     const querySnapshot = await getDocs(q)
     const history = []
     querySnapshot.forEach((doc) => {
-      history.push({ id: doc.id, ...doc.data() })
+      const data = doc.data()
+      history.push({
+        id: doc.id,
+        ...data,
+        mlAnalysis: data.mlAnalysis || data.mlPrediction || null
+      })
     })
     return history
   } catch (error) {
     console.error('History fetch error:', error)
     throw error
   }
+}
+
+export const getDashboardOverview = async () => {
+  const response = await axios.get(`${API_BASE_URL}/api/dashboard/overview`)
+  return response.data || {}
 }
