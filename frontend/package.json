@@ -9,17 +9,14 @@
     "lint": "eslint src --ext js,jsx"
   },
   "dependencies": {
-    "@tensorflow-models/toxicity": "^1.2.2",
-    "@tensorflow/tfjs": "^4.22.0",
     "axios": "^1.6.0",
     "firebase": "^10.5.0",
-    "onnxruntime-web": "^1.24.3",
+    "lucide-react": "^1.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "recharts": "^3.8.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.0.0",
+    "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.54.0",
     "eslint-plugin-react": "^7.33.2",
