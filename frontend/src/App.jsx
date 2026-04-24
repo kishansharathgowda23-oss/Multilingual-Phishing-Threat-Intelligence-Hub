@@ -128,7 +128,6 @@ const initialApps = [
     stats: { spam: 0, malware: 0, resolved: 0 }
   }
 ];
-
 const App = () => {
   const [isActive, setIsActive] = useState(false);
   const [isActivating, setIsActivating] = useState(false);
@@ -271,7 +270,7 @@ const App = () => {
     // Background engine now only reacts to real system events via the backend
     // No more simulated mock threats
     const interval = setInterval(async () => {
-       // Optional: Poll for new history items if real-time webhooks aren't used
+      // Optional: Poll for new history items if real-time webhooks aren't used
     }, 30000); // Check every 30 seconds
 
     return () => clearInterval(interval);
