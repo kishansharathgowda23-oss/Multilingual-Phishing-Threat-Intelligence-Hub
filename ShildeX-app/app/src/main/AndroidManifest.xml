@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shildex.ai"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shildex"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="34">
+
+        <activity
+            android:name="com.shildex.ai.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Shildex.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.shildex.ai.DashboardActivity"
+            android:label="ML Dashboard"
+            android:parentActivityName="com.shildex.ai.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.shildex.ai.HistoryActivity"
+            android:label="Scan History"
+            android:parentActivityName="com.shildex.ai.MainActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

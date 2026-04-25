@@ -1,4 +1,4 @@
-# PhishGuard AI - Phishing Detection Web App
+# Shildex - Phishing Detection Web App
 
 A modern, mobile-friendly React application for detecting phishing, spam, and suspicious links/messages in real-time.
 

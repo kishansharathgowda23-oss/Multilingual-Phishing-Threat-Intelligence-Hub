@@ -40,7 +40,7 @@ app.use('/', analyzeRouter)
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({
-    name: 'PhishGuard AI Backend',
+    name: 'Shildex Backend',
     version: '1.0.0',
     environment: NODE_ENV,
     endpoints: {
@@ -74,7 +74,7 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`
 ╔═══════════════════════════════════════╗
-║   🛡️  PhishGuard AI API Server        ║
+║   🛡️  Shildex API Server        ║
 ╚═══════════════════════════════════════╝
 
 ✅ Server running on: http://localhost:${PORT}
