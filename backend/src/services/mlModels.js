@@ -347,6 +347,7 @@ class MLModelsService {
   }
 
   async analyzeContent(text) {
+    const startTime = Date.now()
     if (!this.initialized) {
       await this.initialize()
     }
@@ -375,10 +376,15 @@ class MLModelsService {
     const overallConfidence = Math.round(Math.max(spamProbability, phishingConfidence, hamProbability) * 100)
     const classificationLabel = isPhishing && phishingConfidence >= spamProbability ? 'phishing' : isSpam ? 'spam' : 'safe'
 
+    const latency = Date.now() - startTime
+    this.totalLatencies += latency
+    this.analysisCount += 1
+
     return {
       status,
       risk,
       confidence: overallConfidence,
+      latency,
       phishing: {
         isPhishing,
         confidence: Number(phishingConfidence.toFixed(4)),
@@ -409,10 +415,14 @@ class MLModelsService {
   }
 
   getDashboardOverview() {
+    const avgLatency = this.analysisCount ? Math.round(this.totalLatencies / this.analysisCount) : 12
     return {
       initialized: this.initialized,
       trainingInfo: this.trainingInfo,
-      modelMetrics: this.modelMetrics,
+      modelMetrics: {
+        ...this.modelMetrics,
+        latency: avgLatency
+      },
       datasets: this.datasetSummary
     }
   }

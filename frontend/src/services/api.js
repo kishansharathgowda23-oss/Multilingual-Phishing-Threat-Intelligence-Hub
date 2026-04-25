@@ -155,7 +155,7 @@ export const getAnalysisHistory = async (userId = 'anonymous', limitCount = 20) 
   }
 }
 
-<export const getDashboardOverview = async () => {
+export const getDashboardOverview = async () => {
   const response = await axios.get(`${API_BASE_URL}/api/dashboard/overview`)
   return response.data || {}
 }

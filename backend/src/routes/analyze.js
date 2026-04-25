@@ -99,7 +99,7 @@ router.post('/analyze', async (req, res) => {
 
     const analysis = await analyzeWithHuggingFace(message)
     const riskAssessment = assessRiskLevel(analysis, extractedData)
-<    const result = formatAnalysisResult(analysis, riskAssessment, extractedData)
+    const result = formatAnalysisResult(analysis, riskAssessment, extractedData)
 
     // Call Python ML Service for additional verification
     let mlScores = [];
