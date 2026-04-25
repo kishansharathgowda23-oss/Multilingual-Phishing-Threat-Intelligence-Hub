@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import {
-  Shield,
-  ShieldCheck,
-  Lock,
-  Smartphone,
-  Globe,
-  Mail,
-  MessageSquare,
-  CreditCard,
+import { 
+  Shield, 
+  ShieldCheck, 
+  Lock, 
+  Smartphone, 
+  Globe, 
+  Mail, 
+  MessageSquare, 
+  CreditCard, 
   MessageCircle,
   Bug,
   AlertTriangle,
@@ -26,44 +26,42 @@ import {
 
 const InstagramIcon = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
   </svg>
 );
 
 const FacebookIcon = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
   </svg>
 );
 
 const WhatsAppIcon = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M11.986 0C5.367 0 0 5.366 0 11.985c0 2.63.852 5.068 2.316 7.072L.41 24l5.063-1.895A11.942 11.942 0 0011.986 24c6.619 0 11.985-5.367 11.985-11.985C23.971 5.366 18.605 0 11.986 0zm0 22.01c-2.107 0-4.084-.555-5.801-1.517l-.416-.232-3.456 1.293.923-3.326-.255-.407C1.945 15.938 1.3 14.025 1.3 11.985 1.3 6.084 6.084 1.3 11.986 1.3c5.9 0 10.685 4.784 10.685 10.685 0 5.902-4.785 10.685-10.685 10.685zM17.85 15.34c-.29-.145-1.72-.85-1.986-.948-.266-.096-.46-.145-.654.145-.193.29-.75 .948-.92 1.141-.168.193-.337.217-.627.072-.29-.145-1.226-.452-2.336-1.442-.864-.77-1.447-1.72-1.616-2.01-.168-.29-.018-.447.127-.591.13-.13.29-.338.435-.508.145-.169.193-.29.29-.483.097-.193.048-.362-.024-.507-.072-.145-.654-1.57-.895-2.15-.236-.568-.475-.49-.654-.499-.168-.009-.362-.009-.556-.009s-.508.072-.774.362c-.266.29-1.016.992-1.016 2.418 0 1.427 1.04 2.805 1.185 2.998.145.193 2.045 3.12 4.952 4.377.693.3 1.233.48 1.656.613.696.22 1.33.189 1.83.115.56-.083 1.72-.703 1.962-1.382.242-.68.242-1.261.169-1.382-.072-.121-.266-.193-.556-.338z" />
+    <path d="M11.986 0C5.367 0 0 5.366 0 11.985c0 2.63.852 5.068 2.316 7.072L.41 24l5.063-1.895A11.942 11.942 0 0011.986 24c6.619 0 11.985-5.367 11.985-11.985C23.971 5.366 18.605 0 11.986 0zm0 22.01c-2.107 0-4.084-.555-5.801-1.517l-.416-.232-3.456 1.293.923-3.326-.255-.407C1.945 15.938 1.3 14.025 1.3 11.985 1.3 6.084 6.084 1.3 11.986 1.3c5.9 0 10.685 4.784 10.685 10.685 0 5.902-4.785 10.685-10.685 10.685zM17.85 15.34c-.29-.145-1.72-.85-1.986-.948-.266-.096-.46-.145-.654.145-.193.29-.75 .948-.92 1.141-.168.193-.337.217-.627.072-.29-.145-1.226-.452-2.336-1.442-.864-.77-1.447-1.72-1.616-2.01-.168-.29-.018-.447.127-.591.13-.13.29-.338.435-.508.145-.169.193-.29.29-.483.097-.193.048-.362-.024-.507-.072-.145-.654-1.57-.895-2.15-.236-.568-.475-.49-.654-.499-.168-.009-.362-.009-.556-.009s-.508.072-.774.362c-.266.29-1.016.992-1.016 2.418 0 1.427 1.04 2.805 1.185 2.998.145.193 2.045 3.12 4.952 4.377.693.3 1.233.48 1.656.613.696.22 1.33.189 1.83.115.56-.083 1.72-.703 1.962-1.382.242-.68.242-1.261.169-1.382-.072-.121-.266-.193-.556-.338z"/>
   </svg>
 );
 
 const GmailIcon = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
   </svg>
 );
 
 const ChromeIcon = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6s4.298-9.6 9.6-9.6 9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6zm6.817-10.4H12.64c-.452-1.848-2.01-3.217-3.95-3.415L12 3.122c4.46.331 8.006 3.738 8.653 8.16l-1.836.718zm-8.817-2.4c-1.325 0-2.4 1.075-2.4 2.4s1.075 2.4 2.4 2.4 2.4-1.075 2.4-2.4-1.075-2.4-2.4-2.4zm-1.8 1.415C6.467 10.42 5.097 12.288 5.097 14.4c0 1.258.411 2.42 1.104 3.354L9.817 12h-1.617zm4.2 8.785c-1.892-.224-3.522-1.365-4.356-3.003L12 14.88c2.476.326 4.793-1.004 5.864-3.153l2.871 4.966A8.375 8.375 0 0 1 12.4 20.4z" />
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6s4.298-9.6 9.6-9.6 9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6zm6.817-10.4H12.64c-.452-1.848-2.01-3.217-3.95-3.415L12 3.122c4.46.331 8.006 3.738 8.653 8.16l-1.836.718zm-8.817-2.4c-1.325 0-2.4 1.075-2.4 2.4s1.075 2.4 2.4 2.4 2.4-1.075 2.4-2.4-1.075-2.4-2.4-2.4zm-1.8 1.415C6.467 10.42 5.097 12.288 5.097 14.4c0 1.258.411 2.42 1.104 3.354L9.817 12h-1.617zm4.2 8.785c-1.892-.224-3.522-1.365-4.356-3.003L12 14.88c2.476.326 4.793-1.004 5.864-3.153l2.871 4.966A8.375 8.375 0 0 1 12.4 20.4z"/>
   </svg>
 );
-import { getAnalysisHistory, uploadAndAnalyzeFile, analyzeContent, paymentAutoScan, paymentDeepScan, paymentVerifyAuth } from './services/api';
+import { getAnalysisHistory } from './services/api';
 import { auth } from './services/firebase';
-import {
-  GoogleAuthProvider,
-  RecaptchaVerifier,
-  signInWithPopup,
+import { 
+  GoogleAuthProvider, 
+  RecaptchaVerifier, 
+  signInWithPopup, 
   linkWithPhoneNumber,
-  onAuthStateChanged
+  onAuthStateChanged 
 } from 'firebase/auth';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import axios from 'axios';
 
 /**
  * App Component
@@ -128,11 +126,12 @@ const initialApps = [
     stats: { spam: 0, malware: 0, resolved: 0 }
   }
 ];
+
 const App = () => {
   const [isActive, setIsActive] = useState(false);
   const [isActivating, setIsActivating] = useState(false);
   const [resolvingId, setResolvingId] = useState(null);
-
+  
   // Track manually resolved apps in the current session
   const [manuallyResolved, setManuallyResolved] = useState([]);
   const [apps, setApps] = useState(initialApps);
@@ -140,119 +139,6 @@ const App = () => {
   const [isDashboardOpen, setIsDashboardOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [spamDetails, setSpamDetails] = useState([]);
-  const [hasPermissions, setHasPermissions] = useState(false);
-  const [permissionStep, setPermissionStep] = useState(0); // 0: Start, 1: Process, 2: Done
-  const [isGranting, setIsGranting] = useState(false);
-  const [textInput, setTextInput] = useState('');
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
-
-  // 💳 Payment Shield States
-  const [paymentUrl, setPaymentUrl] = useState('');
-  const [paymentScanResult, setPaymentScanResult] = useState(null);
-  const [paymentScanStage, setPaymentScanStage] = useState('idle'); // idle, auto_scanning, auto_done, deep_scanning, deep_done, auth_required, auth_verifying, verified, blocked
-  const [paymentAuthPin, setPaymentAuthPin] = useState('');
-
-  // 💳 Payment Link Detection Helper
-  const isPaymentLink = (url) => {
-    if (!url) return false;
-    const lower = url.toLowerCase();
-    return (
-      lower.startsWith('upi://') ||
-      /pay|payment|checkout|invoice|donate|razorpay|stripe|paypal|paytm|phonepe|gpay|wallet|transfer|amount=/i.test(lower)
-    );
-  };
-
-  // 💳 Stage 1: Auto-Scan Payment Link
-  const handlePaymentAutoScan = async () => {
-    if (!paymentUrl.trim()) return;
-    setPaymentScanStage('auto_scanning');
-    setPaymentScanResult(null);
-
-    const result = await paymentAutoScan(paymentUrl);
-    setPaymentScanResult(result);
-
-    if (result.action === 'BLOCK') {
-      setPaymentScanStage('blocked');
-    } else if (result.action === 'AUTH_REQUIRED') {
-      setPaymentScanStage('auth_required');
-    } else {
-      setPaymentScanStage('auto_done');
-    }
-  };
-
-  // 💳 Stage 2: Deep-Scan (user clicks "Open Link")
-  const handlePaymentDeepScan = async () => {
-    setPaymentScanStage('deep_scanning');
-
-    const result = await paymentDeepScan(paymentUrl);
-    setPaymentScanResult(result);
-
-    if (result.action === 'BLOCK') {
-      setPaymentScanStage('blocked');
-    } else if (result.action === 'AUTH_REQUIRED') {
-      setPaymentScanStage('auth_required');
-    } else {
-      setPaymentScanStage('verified');
-      // Safe → open the link
-      setTimeout(() => window.open(paymentUrl, '_blank'), 800);
-    }
-  };
-
-  // 💳 Auth Gate: Verify identity before opening suspicious link
-  const handlePaymentAuth = async () => {
-    if (paymentAuthPin.length < 4) return;
-    setPaymentScanStage('auth_verifying');
-
-    const linkHash = paymentScanResult?.link_hash || '';
-    const token = auth?.currentUser?.uid || 'anonymous';
-
-    const result = await paymentVerifyAuth(linkHash, token + ':' + paymentAuthPin, true);
-
-    if (result.verified) {
-      setPaymentScanStage('verified');
-      setTimeout(() => window.open(paymentUrl, '_blank'), 800);
-    } else {
-      setPaymentScanStage('auth_required');
-      setPaymentAuthPin('');
-    }
-  };
-
-  // 💳 Reset payment scanner
-  const resetPaymentScanner = () => {
-    setPaymentUrl('');
-    setPaymentScanResult(null);
-    setPaymentScanStage('idle');
-    setPaymentAuthPin('');
-  };
-
-  // 🔥 Analyze Content (Text or Image/File)
-  const handleAnalyze = async (file = null) => {
-    if (!textInput.trim() && !file) return;
-
-    setIsAnalyzing(true);
-    try {
-      if (file) {
-        // Image or File Scan
-        const data = await uploadAndAnalyzeFile(file);
-
-        if (data) {
-          alert(`File Scan: ${data.details || data.warning || 'Scan in progress'}`);
-        }
-      } else {
-        // Text analysis
-        const data = await analyzeContent(textInput);
-        if (data.status === "Spam" || data.risk === "High") {
-          setIsActive(true);
-        }
-      }
-    } catch (error) {
-      console.error("Analysis failed:", error);
-      alert("Analysis failed. Please try again.");
-    } finally {
-      setIsAnalyzing(false);
-      setTextInput('');
-    }
-  };
 
   // Auth States
   const [authStep, setAuthStep] = useState('loading'); // loading, google, phone, otp, authenticated
@@ -262,38 +148,6 @@ const App = () => {
   const [authError, setAuthError] = useState('');
   const [isAuthLoading, setIsAuthLoading] = useState(false);
 
-
-  // 🔥 Background Protection Engine (Real-time update from backend/history)
-  useEffect(() => {
-    if (!isActive || !hasPermissions) return;
-
-    // Background engine now only reacts to real system events via the backend
-    // No more simulated mock threats
-    const interval = setInterval(async () => {
-      // Optional: Poll for new history items if real-time webhooks aren't used
-    }, 30000); // Check every 30 seconds
-
-    return () => clearInterval(interval);
-  }, [isActive, hasPermissions]);
-
-  // 🔥 Permission Flow Handlers
-  const handleGrantPermissions = () => {
-    setIsGranting(true);
-    setPermissionStep(1);
-
-    // Simulate complex permission granting process
-    const duration = 3000;
-    setTimeout(() => {
-      setPermissionStep(2);
-      setIsGranting(false);
-      setTimeout(() => {
-        setHasPermissions(true);
-        setIsActive(true); // Automatically activate shield once permissions are granted
-      }, 1500);
-    }, duration);
-  };
-
-  // 🔥 Handle Retrain Dataset Upload
   useEffect(() => {
     const unsubscribe = auth?.onAuthStateChanged(user => {
       if (user) {
@@ -329,13 +183,13 @@ const App = () => {
     try {
       setIsAuthLoading(true);
       setAuthError('');
-
+      
       if (!window.recaptchaVerifier) {
         window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {
           'size': 'invisible'
         });
       }
-
+      
       const appVerifier = window.recaptchaVerifier;
       const confirmation = await linkWithPhoneNumber(auth.currentUser, phoneNumber, appVerifier);
       setConfirmationResult(confirmation);
@@ -379,18 +233,11 @@ const App = () => {
       setLoading(true);
       try {
         const data = await getAnalysisHistory('anonymous', 50);
-
+        
         // Filter out safe items and keep only threats for the details dashboard
         const threats = data.filter(item => item.status === 'Spam' || item.risk === 'High' || item.status === 'Suspicious');
-
-        // Only include items that actually have ML scores from the backend
-        const threatsWithScores = threats.map(threat => ({
-          ...threat,
-          mlScores: threat.mlScores || []
-        }));
-
-        setSpamDetails(threatsWithScores);
-
+        setSpamDetails(threats);
+        
         setApps(currentApps => {
           const updatedApps = currentApps.map(app => ({
             ...app,
@@ -402,12 +249,12 @@ const App = () => {
             const isEmail = item.emails && item.emails.length > 0;
             const isSpam = item.status === 'Spam';
             const isMalware = item.risk === 'High' || item.status === 'Suspicious';
-            const isResolvedItem = item.status === 'Safe' || item.status === 'Clean' || (item.risk === 'Low' && !isSpam && !isMalware);
+            const isResolvedItem = item.status === 'Safe' || item.status === 'Clean' || item.risk === 'Low' && !isSpam && !isMalware;
 
             const contentLower = (item.content || item.fileName || '').toLowerCase();
-
+             
             let targetAppId = '7'; // Default to Chrome Browser (Utility)
-
+            
             if (isEmail || contentLower.includes('mail')) targetAppId = '6'; // Gmail
             else if (contentLower.includes('bank') || contentLower.includes('finance') || contentLower.includes('pay') || contentLower.includes('card')) targetAppId = '1'; // Banking Pro
             else if (contentLower.includes('sms') || contentLower.includes('message')) targetAppId = '2'; // SMS & Messages
@@ -456,7 +303,7 @@ const App = () => {
     setTimeout(() => {
       setResolvingId(null);
       setManuallyResolved(prev => [...prev, id]);
-
+      
       // Update the local state to increment resolved count
       setApps(currentApps => currentApps.map(app => {
         if (app.id === id) {
@@ -483,7 +330,7 @@ const App = () => {
     return (
       <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-6 font-sans w-full">
         <div className="w-full max-w-md bg-slate-900/40 border border-slate-800/80 rounded-3xl shadow-2xl p-8 relative overflow-hidden">
-
+          
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-500"></div>
 
           <div className="flex justify-center mb-8">
@@ -507,7 +354,7 @@ const App = () => {
                 <div className="w-6 h-6 rounded-full bg-indigo-500 text-white flex items-center justify-center text-xs font-bold">1</div>
                 <h3 className="text-sm font-semibold text-slate-300">Google Authentication</h3>
               </div>
-              <button
+              <button 
                 onClick={handleGoogleLogin}
                 disabled={isAuthLoading}
                 className="w-full py-3.5 bg-white text-slate-900 hover:bg-slate-100 rounded-xl font-bold transition-all flex items-center justify-center gap-3 disabled:opacity-50"
@@ -547,8 +394,8 @@ const App = () => {
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                       <Phone className="h-5 w-5 text-slate-500" />
                     </div>
-                    <input
-                      type="tel"
+                    <input 
+                      type="tel" 
                       placeholder="+1 234 567 8900"
                       value={phoneNumber}
                       onChange={(e) => setPhoneNumber(e.target.value)}
@@ -558,7 +405,7 @@ const App = () => {
                   </div>
                 </div>
                 <div id="recaptcha-container"></div>
-                <button
+                <button 
                   type="submit"
                   disabled={isAuthLoading || !phoneNumber}
                   className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold transition-all disabled:opacity-50 flex items-center justify-center shadow-[0_0_20px_rgba(79,70,229,0.3)]"
@@ -578,15 +425,15 @@ const App = () => {
 
           {authStep === 'otp' && (
             <div className="space-y-4">
-              <div className="flex items-center gap-2 mb-6 text-indigo-400 justify-center">
-                <KeyRound size={20} />
-                <h3 className="text-sm font-semibold">Enter Verification Code</h3>
-              </div>
+               <div className="flex items-center gap-2 mb-6 text-indigo-400 justify-center">
+                  <KeyRound size={20} />
+                  <h3 className="text-sm font-semibold">Enter Verification Code</h3>
+               </div>
               <form onSubmit={handleVerifyOTP} className="space-y-4">
                 <div>
                   <p className="text-xs text-slate-400 text-center mb-4">Code sent to {phoneNumber}</p>
-                  <input
-                    type="text"
+                  <input 
+                    type="text" 
                     placeholder="123456"
                     value={otp}
                     onChange={(e) => setOtp(e.target.value)}
@@ -595,7 +442,7 @@ const App = () => {
                     required
                   />
                 </div>
-                <button
+                <button 
                   type="submit"
                   disabled={isAuthLoading || otp.length < 6}
                   className="w-full py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-bold transition-all disabled:opacity-50 flex items-center justify-center shadow-[0_0_20px_rgba(16,185,129,0.2)]"
@@ -611,84 +458,21 @@ const App = () => {
     );
   }
 
-  // 🔥 Permission Overlay (Installation Simulation)
-  if (!hasPermissions) {
-    return (
-      <div className="fixed inset-0 z-[100] bg-slate-950 flex items-center justify-center p-6">
-        <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
-
-          <div className="flex flex-col items-center text-center">
-            <div className="w-24 h-24 mb-8 overflow-hidden rounded-2xl shadow-[0_0_30px_rgba(79,70,229,0.3)] border border-slate-800">
-              <img src="/logo.jpg" alt="ShieldX Logo" className="w-full h-full object-cover scale-110" />
-            </div>
-
-            <h1 className="text-2xl font-bold text-white mb-4">ShieldX Installation</h1>
-
-            {permissionStep === 0 && (
-              <>
-                <p className="text-slate-400 text-sm mb-8 leading-relaxed">
-                  To provide background protection across all sectors, ShieldX requires administrative device control permissions.
-                </p>
-                <div className="space-y-3 w-full mb-8 text-left">
-                  <div className="flex items-center gap-3 text-xs text-slate-500 bg-slate-950/50 p-3 rounded-xl border border-slate-800">
-                    <Smartphone size={16} className="text-indigo-400" /> System Overlay Control
-                  </div>
-                  <div className="flex items-center gap-3 text-xs text-slate-500 bg-slate-950/50 p-3 rounded-xl border border-slate-800">
-                    <Lock size={16} className="text-indigo-400" /> Accessibility Service Access
-                  </div>
-                  <div className="flex items-center gap-3 text-xs text-slate-500 bg-slate-950/50 p-3 rounded-xl border border-slate-800">
-                    <CreditCard size={16} className="text-indigo-400" /> Payment Link Interception
-                  </div>
-                </div>
-                <button
-                  onClick={handleGrantPermissions}
-                  className="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-bold transition-all shadow-[0_0_20px_rgba(79,70,229,0.3)]"
-                >
-                  Grant All Permissions
-                </button>
-              </>
-            )}
-
-            {permissionStep === 1 && (
-              <div className="py-10 flex flex-col items-center">
-                <Loader2 className="w-12 h-12 text-indigo-500 animate-spin mb-6" />
-                <p className="text-indigo-400 font-mono text-xs uppercase tracking-[0.2em] animate-pulse">
-                  Linking System Modules...
-                </p>
-              </div>
-            )}
-
-            {permissionStep === 2 && (
-              <div className="py-10 flex flex-col items-center">
-                <CheckCircle2 className="w-16 h-16 text-emerald-500 mb-6 scale-110 transition-transform duration-500" />
-                <p className="text-emerald-400 font-bold uppercase tracking-widest text-sm">
-                  Permissions Granted
-                </p>
-                <p className="text-slate-500 text-xs mt-2">ShieldX is now protecting your device in the background.</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center p-6 font-sans w-full relative overflow-x-hidden">
-
+      
       {/* Top Right Controls */}
       <div className="absolute top-6 right-6 flex items-center gap-3 z-10">
-
+        
         {/* Profile Button */}
         <div className="relative">
-          <button
+          <button 
             onClick={() => setIsProfileOpen(!isProfileOpen)}
             className="p-3 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:bg-slate-800 transition-all"
           >
             <User size={24} />
           </button>
-
+          
           {/* Profile Dropdown */}
           {isProfileOpen && (
             <div className="absolute right-0 mt-2 w-64 bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-4 z-20">
@@ -723,21 +507,20 @@ const App = () => {
                   <span className="text-slate-300 font-medium text-xs font-mono">Level 5</span>
                 </div>
               </div>
-
-              <button
+              
+              <button 
                 onClick={handleLogout}
                 className="w-full mt-5 py-2.5 bg-red-500/10 hover:bg-red-500/20 text-red-500 rounded-xl text-sm font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2 border border-red-500/20"
               >
                 <LogOut size={16} />
                 Logout
               </button>
-
             </div>
           )}
         </div>
 
         {/* Menu Button */}
-        <button
+        <button 
           onClick={() => {
             setIsProfileOpen(false); // Close profile if open
             setIsDashboardOpen(true);
@@ -750,11 +533,12 @@ const App = () => {
 
       {/* Header Section */}
       <header className="w-full max-w-2xl mt-10 mb-8 text-center">
-        <div
-          className={`mx-auto w-24 h-24 rounded-full overflow-hidden flex items-center justify-center transition-all duration-700 mb-6 border ${isActive
-            ? 'border-emerald-500/50 shadow-[0_0_40px_rgba(16,185,129,0.3)]'
-            : 'border-slate-800 grayscale opacity-70'
-            }`}
+        <div 
+          className={`mx-auto w-24 h-24 rounded-full overflow-hidden flex items-center justify-center transition-all duration-700 mb-6 border ${
+            isActive 
+              ? 'border-emerald-500/50 shadow-[0_0_40px_rgba(16,185,129,0.3)]' 
+              : 'border-slate-800 grayscale opacity-70'
+          }`}
         >
           <img src="/logo.jpg" alt="ShieldX Logo" className="w-full h-full object-cover" />
         </div>
@@ -762,37 +546,38 @@ const App = () => {
           {isActive ? 'System Shielded' : 'Action Required'}
         </h1>
         <p className="text-slate-400 text-sm px-4 leading-relaxed">
-          {isActive
-            ? 'Total protection is active. Every sector is being scanned for vulnerabilities.'
+          {isActive 
+            ? 'Total protection is active. Every sector is being scanned for vulnerabilities.' 
             : 'Vulnerabilities detected in several sectors. Activate master shield or solve individually.'}
         </p>
       </header>
-
-      {/* Background Protection Status (Hidden UI Elements as per request) */}
-      {/* 
-          THREAT ANALYSIS ENGINE and PAYMENT SHIELD are now running in the background. 
-          The UI is kept clean and minimal to not disturb the user.
-      */}
 
       {/* Main Master Button */}
       <div className="w-full max-w-2xl mb-10">
         <button
           onClick={handleToggle}
           disabled={isActivating || loading}
-          className={`w-full py-6 rounded-3xl font-bold text-lg transition-all duration-300 transform active:scale-95 flex flex-col items-center justify-center gap-1 border shadow-2xl ${isActivating || loading
-            ? 'bg-slate-800 text-slate-500 cursor-not-allowed border-slate-700'
-            : isActive
-              ? 'bg-slate-900 text-emerald-400 border-emerald-500/30 shadow-[0_0_50px_rgba(16,185,129,0.1)]'
-              : 'bg-slate-900 text-slate-400 border-slate-800'
-            }`}
+          className={`w-full py-5 rounded-2xl font-bold text-lg transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-3 border shadow-2xl ${
+            isActivating || loading
+              ? 'bg-slate-800 text-slate-500 cursor-not-allowed border-slate-700' 
+              : isActive 
+                ? 'bg-slate-900 text-slate-300 border-slate-700 hover:bg-red-500/10 hover:text-red-400 hover:border-red-500/30' 
+                : 'bg-indigo-600 text-white border-indigo-400 hover:bg-indigo-500 shadow-indigo-500/20'
+          }`}
         >
-          <div className="flex items-center gap-3">
-            {isActivating ? <Loader2 className="w-5 h-5 animate-spin" /> : isActive ? <ShieldCheck size={24} /> : <Shield size={24} />}
-            <span>{isActive ? 'Shield Active' : 'Shield Inactive'}</span>
-          </div>
-          <span className="text-[10px] uppercase tracking-[0.2em] opacity-50 font-medium">
-            {isActive ? 'Real-time background protection on' : 'Click to enable background protection'}
-          </span>
+          {isActivating ? (
+            <div className="flex items-center gap-3">
+              <Loader2 className="w-5 h-5 animate-spin" />
+              <span className="animate-pulse">Initializing Protocol...</span>
+            </div>
+          ) : isActive ? (
+            <span>Disable Master Shield</span>
+          ) : (
+            <>
+              <Lock size={20} />
+              <span>Activate Master Shield</span>
+            </>
+          )}
         </button>
       </div>
 
@@ -804,8 +589,7 @@ const App = () => {
           </h2>
           <div className="h-[1px] flex-grow ml-4 bg-slate-800/50"></div>
         </div>
-
-
+        
         {loading ? (
           <div className="flex flex-col items-center justify-center py-10 text-slate-500">
             <Loader2 className="w-8 h-8 animate-spin mb-4" />
@@ -823,15 +607,17 @@ const App = () => {
               const isThisResolving = resolvingId === app.id;
 
               return (
-                <div
-                  key={app.id}
-                  className={`group flex flex-col p-4 bg-slate-900/40 border rounded-2xl transition-all duration-500 ${isResolved ? 'border-emerald-500/20 bg-emerald-500/[0.02]' : 'border-slate-800/60'
-                    }`}
+                <div 
+                  key={app.id} 
+                  className={`group flex flex-col p-4 bg-slate-900/40 border rounded-2xl transition-all duration-500 ${
+                    isResolved ? 'border-emerald-500/20 bg-emerald-500/[0.02]' : 'border-slate-800/60'
+                  }`}
                 >
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-4">
-                      <div className={`w-11 h-11 flex-shrink-0 rounded-xl flex items-center justify-center transition-all duration-500 ${isResolved ? 'bg-emerald-500/10 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.1)]' : 'bg-slate-800 text-slate-500'
-                        }`}>
+                      <div className={`w-11 h-11 flex-shrink-0 rounded-xl flex items-center justify-center transition-all duration-500 ${
+                        isResolved ? 'bg-emerald-500/10 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.1)]' : 'bg-slate-800 text-slate-500'
+                      }`}>
                         {app.icon}
                       </div>
                       <div className="max-w-[200px] sm:max-w-[350px]">
@@ -839,10 +625,10 @@ const App = () => {
                         <p className="text-[11px] text-slate-500 font-medium uppercase tracking-wide">{app.category}</p>
                       </div>
                     </div>
-
+                    
                     {/* Solve Button for individual sectors */}
                     {!isResolved ? (
-                      <button
+                      <button 
                         onClick={() => handleSolve(app.id)}
                         disabled={isThisResolving}
                         className="px-4 py-2 flex-shrink-0 rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/30 text-[10px] font-bold uppercase tracking-wider hover:bg-indigo-500 hover:text-white transition-all flex items-center gap-2"
@@ -878,8 +664,9 @@ const App = () => {
                       </div>
                       <span className="text-xs font-mono font-bold text-slate-300">{app.stats.malware}</span>
                     </div>
-                    <div className={`flex flex-col items-center p-2 rounded-lg transition-colors duration-500 ${isResolved ? 'bg-emerald-500/5 border border-emerald-500/10' : 'bg-slate-950/40'
-                      }`}>
+                    <div className={`flex flex-col items-center p-2 rounded-lg transition-colors duration-500 ${
+                      isResolved ? 'bg-emerald-500/5 border border-emerald-500/10' : 'bg-slate-950/40'
+                    }`}>
                       <div className={`flex items-center gap-1.5 mb-1 ${isResolved ? 'text-emerald-400' : 'text-slate-500'}`}>
                         <CheckCircle2 size={10} />
                         <span className="text-[9px] font-bold">FIXED</span>
@@ -903,23 +690,24 @@ const App = () => {
       </footer>
 
       {/* Sliding Spam Details Dashboard */}
-      <div
-        className={`fixed top-0 right-0 h-full w-full sm:w-96 bg-slate-950 border-l border-slate-800 transform transition-transform duration-500 ease-in-out z-50 flex flex-col ${isDashboardOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
+      <div 
+        className={`fixed top-0 right-0 h-full w-full sm:w-96 bg-slate-950 border-l border-slate-800 transform transition-transform duration-500 ease-in-out z-50 flex flex-col ${
+          isDashboardOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
       >
         <div className="flex items-center justify-between p-6 border-b border-slate-800/60">
           <h2 className="text-lg font-bold text-slate-200 flex items-center gap-2">
             <AlertTriangle className="text-orange-500 w-5 h-5" />
             Threat Details
           </h2>
-          <button
+          <button 
             onClick={() => setIsDashboardOpen(false)}
             className="p-2 text-slate-500 hover:text-white hover:bg-slate-900 rounded-lg transition-colors"
           >
             <X size={20} />
           </button>
         </div>
-
+        
         <div className="flex-1 overflow-y-auto p-4 space-y-3">
           {spamDetails.length === 0 ? (
             <div className="text-center py-10 text-slate-500 text-sm">
@@ -932,8 +720,9 @@ const App = () => {
                   <span className="text-sm font-semibold text-slate-300 break-all">
                     {threat.fileName || threat.content || 'Unknown Source'}
                   </span>
-                  <span className={`text-[10px] px-2 py-1 rounded font-bold uppercase tracking-wider whitespace-nowrap ${threat.risk === 'High' ? 'bg-red-500/10 text-red-400 border border-red-500/20' : 'bg-orange-500/10 text-orange-400 border border-orange-500/20'
-                    }`}>
+                  <span className={`text-[10px] px-2 py-1 rounded font-bold uppercase tracking-wider whitespace-nowrap ${
+                    threat.risk === 'High' ? 'bg-red-500/10 text-red-400 border border-red-500/20' : 'bg-orange-500/10 text-orange-400 border border-orange-500/20'
+                  }`}>
                     {threat.risk === 'High' ? 'Malware' : 'Spam'}
                   </span>
                 </div>
@@ -942,46 +731,18 @@ const App = () => {
                     <Mail size={12} /> {threat.emails[0]}
                   </div>
                 )}
-                <div className="text-[10px] text-slate-600 mt-1 uppercase tracking-widest flex justify-between items-center">
-                  <span>Status: {threat.status}</span>
+                <div className="text-[10px] text-slate-600 mt-1 uppercase tracking-widest">
+                  Status: {threat.status}
                 </div>
-
-                {/* Performance Graph when Shield is Active */}
-                {isActive && threat.mlScores && (
-                  <div className="mt-3 pt-3 border-t border-slate-800/60">
-                    <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-1">
-                      <ShieldCheck size={12} className="text-emerald-500" />
-                      Model Confidence Scores
-                    </h4>
-                    <div className="h-32 w-full">
-                      <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={threat.mlScores} margin={{ top: 5, right: 5, left: -25, bottom: 0 }}>
-                          <XAxis dataKey="name" tick={{ fontSize: 8, fill: '#64748b' }} interval={0} />
-                          <YAxis tick={{ fontSize: 8, fill: '#64748b' }} />
-                          <Tooltip
-                            contentStyle={{ backgroundColor: '#0f172a', border: '1px solid #1e293b', borderRadius: '8px', fontSize: '10px' }}
-                            itemStyle={{ color: '#10b981' }}
-                            cursor={{ fill: '#1e293b', opacity: 0.4 }}
-                          />
-                          <Bar dataKey="score" radius={[2, 2, 0, 0]}>
-                            {threat.mlScores.map((entry, index) => (
-                              <Cell key={`cell-${index}`} fill={entry.score > 80 ? '#10b981' : entry.score > 65 ? '#f59e0b' : '#ef4444'} />
-                            ))}
-                          </Bar>
-                        </BarChart>
-                      </ResponsiveContainer>
-                    </div>
-                  </div>
-                )}
               </div>
             ))
           )}
         </div>
       </div>
-
+      
       {/* Overlay to close dashboard when clicking outside */}
       {isDashboardOpen && (
-        <div
+        <div 
           className="fixed inset-0 bg-black/40 z-40 backdrop-blur-sm transition-opacity duration-500"
           onClick={() => setIsDashboardOpen(false)}
         />

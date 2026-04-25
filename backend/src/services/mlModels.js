@@ -33,11 +33,6 @@ const SUSPICIOUS_URL_PATTERNS = [
   /https?:\/\/\d+\.\d+\.\d+\.\d+/gi
 ]
 
-const EXTERNAL_THREAT_FEEDS = [
-  'https://openphish.com/feed.txt',
-  'https://phishstats.info/phish_score.csv'
-]
-
 const normalizeCount = (value) => Number.parseInt(value || 0, 10) || 0
 const normalizeFloat = (value) => Number.parseFloat(value || 0) || 0
 
@@ -160,10 +155,7 @@ class MLModelsService {
         'naive-bayes-text',
         'keyword-phishing-signals',
         'url-pattern-analysis',
-        'email-metadata-heuristics',
-        'sentiment-analysis',
-        'urgency-detection',
-        'spam-pattern-clustering'
+        'email-metadata-heuristics'
       ]
     }
     this.initialized = true
@@ -402,21 +394,6 @@ class MLModelsService {
         model: 'NaiveBayes-Dataset',
         details: classifications
       },
-      sentiment: {
-        score: 0.85,
-        label: 'negative',
-        model: 'Sentiment-Spam-Detector'
-      },
-      urgency: {
-        score: 0.92,
-        label: 'high',
-        model: 'Urgency-Classifier'
-      },
-      clustering: {
-        cluster: 'finance-phishing',
-        similarity: 0.88,
-        model: 'Keyword-Clustering-Model'
-      },
       classification: {
         classification: classificationLabel,
         confidence: Number(Math.max(spamProbability, phishingConfidence, hamProbability).toFixed(4)),
@@ -427,14 +404,7 @@ class MLModelsService {
         ],
         model: 'Hybrid-Ensemble'
       },
-      models: [
-        'NaiveBayes-Dataset',
-        'RuleEngine-Phishing',
-        'Hybrid-Ensemble',
-        'Sentiment-Spam-Detector',
-        'Urgency-Classifier',
-        'Keyword-Clustering-Model'
-      ]
+      models: ['NaiveBayes-Dataset', 'RuleEngine-Phishing', 'Hybrid-Ensemble']
     }
   }
 
@@ -443,8 +413,7 @@ class MLModelsService {
       initialized: this.initialized,
       trainingInfo: this.trainingInfo,
       modelMetrics: this.modelMetrics,
-      datasets: this.datasetSummary,
-      externalFeeds: EXTERNAL_THREAT_FEEDS
+      datasets: this.datasetSummary
     }
   }
 
